@@ -1,2 +1,2 @@
 # klc_layout
-Set of PC-Keyboard (ISO-105) layouts for modern Slavic languages 
+Set of PC-keyboard (ISO-105) layouts for modern Slavic languages
