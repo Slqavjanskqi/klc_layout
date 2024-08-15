@@ -1,81 +1,78 @@
-﻿KBD             SLQAVJANSKQI "Slavonic language layout"       // USAGE: installed-programs list
-
+﻿KBD             SLQAVJANSKQI "Slavonic language layout"     // USAGE: installed-programs list
 COPYRIGHT       "(c) 2018 Korcakov, Roman"
-
 COMPANY         "Slqavjanskqi"
-
 LOCALENAME      "cu-RU"                                     // Placeholder for: sla-SLA (Slavic Languages), sla-CU (Church Slavic)
-
 LOCALEID        "00001000"
-
-VERSION         3.6.1                                       // USAGE: unknown
+VERSION         3.6.5                                       // USAGE: unknown
 
 SHIFTSTATE
-
-0                                                           //Column 4
-1                                                           //Column 5 : Shft
-2                                                           //Column 6 :       Ctrl
-6                                                           //Column 7 :       Ctrl Alt
-7                                                           //Column 8 : Shft  Ctrl Alt
+0                                                           // Level 1 : Base
+1                                                           // Level 2 : Base + Shft
+2                                                           // Level 5 : Base + Ctrl
+3                                                           // Level 3 : Base + Alt
+4                                                           // Level 6 : Base + Ctrl + Shift
+5                                                           // Level 4 : Base + Alt + Shift
+6                                                           // Level 7 : Base + Ctrl + Alt
+7                                                           // Level 8 : Base + Ctrl + Alt + Shft
 
 LAYOUT                                                      ;an extra '@' at the end is a dead key
+//ScanCodeHex   VirtKeyHex  DeadCap(0/1)0(1)        1(2)        2(5)        3(3)        4(6)        5(4)        6(7)        7(8)
+01              ^           1           005E@       00B0        0308        00D7        -1          0302        0482        0483
+02              1           0           1           0021        00BC        2019        25CA        -1          0488        -1      // DIGIT ONE, EXCLAMATION MARK, <none>, INVERTED EXCLAMATION MARK, SUPERSCRIPT ONE
+03              2           0           2           0022        00BD        00B2        00A6        -1          0489        A670    // DIGIT TWO, QUOTATION MARK, <none>, DIAMETER SIGN, SUPERSCRIPT TWO
+04              3           0           3           00A7        00BE        00B3        00B6        -1          A671        A672    // DIGIT THREE, RUBLE SIGN, <none>, SECTION SIGN, SUPERSCRIPT THREE
+05              4           0           4           0024        00A4        2014        2133        -1          20BD        20B4    // DIGIT FOUR, EURO SIGN, <none>, DOLLAR SIGN, POUND SIGN
+06              5           0           5           0025        2030        00A1        20B0        20AC        00A5        -1      // DIGIT FIVE, PERCENT SIGN, <none>, YEN SIGN, CURRENCY SIGN
+07              6           0           6           0026        2044        00BF        204A        -1          -1          -1      // DIGIT SIX, AMPERSAND, <none>, TILDE, COMBINING TILDE
+08              7           0           7           002F        2300        007B        2116        00F7        -1          -1      // DIGIT SEVEN, QUESTION MARK, <none>, CIRCUMFLEX ACCENT, INVERTED QUESTION MARK
+09              8           0           8           0028        27E8        005B        27EA        221E        -1          -1      // DIGIT EIGHT, ASTERISK, <none>, LEFT CURLY BRACKET, INFINITY
+0a              9           0           9           0029        27E9        005D        27EB        -1          -1          -1      // DIGIT NINE, LEFT PARENTHESIS, <none>, LEFT SQUARE BRACKET, DIVISION SIGN
+0b              0           0           0           003D        00F7        007D        2205        2260        -1          -1      // DIGIT ZERO, RIGHT PARENTHESIS, <none>, RIGHT SQUARE BRACKET, PLUS SIGN
+0c              -1          0           -1          003F        -1          005C        -1          -1          -1          -1      // EN DASH, LOW LINE, <none>, RIGHT CURLY BRACKET, PLUS-MINUS SIGN
+0d              0301        0           0301        0300        00A3        0307        035C        0327        030B        030F    // SOLIDUS, REVERSE SOLIDUS, <none>, EQUALS SIGN, NOT EQUAL TO
 
-//SC            VK_         Cap         0           1           2           6           7
+10              Q           5           046B        046A        0040        046D        -1          046C        051B        051A    // CYRILLIC SMALL LETTER BIG YUS, CYRILLIC CAPITAL LETTER BIG YUS, <none>, CYRILLIC SMALL LETTER IOTIFIED BIG YUS, CYRILLIC CAPITAL LETTER IOTIFIED BIG YUS
+11              W           5           0446        0426        00A2        -1          00A9        -1          -1          -1      // CYRILLIC SMALL LETTER TSE, CYRILLIC CAPITAL LETTER TSE, <none>, CYRILLIC SMALL LETTER YAT, CYRILLIC CAPITAL LETTER YAT
+12              E           5           0443        0423        A64B        044E        A64A        042E        0479        0478    // CYRILLIC SMALL LETTER U, CYRILLIC CAPITAL LETTER U, <none>, CYRILLIC SMALL LETTER YU, CYRILLIC CAPITAL LETTER YU
+13              R           5           043a        041a        -1          0481        -1          0480        -1          -1      // CYRILLIC SMALL LETTER KA, CYRILLIC CAPITAL LETTER KA, <none>, COMMERCIAL AT, <none>
+14              T           5           0435        0415        044D        0454        042D        0404        0465        0464    // CYRILLIC SMALL LETTER IE, CYRILLIC CAPITAL LETTER IE, <none>, CYRILLIC SMALL LETTER UKRAINIAN IE, CYRILLIC CAPITAL LETTER UKRAINIAN IE
+15              Z           5           043d        041d        -1          045A        -1          040A        -1          -1      // CYRILLIC SMALL LETTER EN, CYRILLIC CAPITAL LETTER EN, <none>, CYRILLIC SMALL LETTER NJE, CYRILLIC CAPITAL LETTER NJE
+16              U           5           0433        0413        2192        0491        2190        0490        -1          -1      // CYRILLIC SMALL LETTER GHE, CYRILLIC CAPITAL LETTER GHE, <none>, CYRILLIC SMALL LETTER GHE WITH UPTURN, CYRILLIC CAPITAL LETTER GHE WITH UPTURN
+17              I           5           0448        0428        2193        0449        2191        0429        0471        0470    // CYRILLIC SMALL LETTER SHA, CYRILLIC CAPITAL LETTER SHA, <none>, CYRILLIC SMALL LETTER SHCHA, CYRILLIC CAPITAL LETTER SHCHA
+18              O           5           0456        0406        0457        0458        0407        0408        -1          -1      // CYRILLIC SMALL LETTER BYELORUSSIAN-UKRAINIAN I, CYRILLIC CAPITAL LETTER BYELORUSSIAN-UKRAINIAN I, <none>, CYRILLIC SMALL LETTER JE, CYRILLIC CAPITAL LETTER JE
+19              P           5           0437        0417        A641        0455        A640        0405        A643        A642    // CYRILLIC SMALL LETTER ZE, CYRILLIC CAPITAL LETTER ZE, <none>, CYRILLIC SMALL LETTER KSI, CYRILLIC CAPITAL LETTER KSI
+1a              OEM_4       1           0445        0425        2198        0304        2197        -1          2196        2199    // CYRILLIC SMALL LETTER HA, CYRILLIC CAPITAL LETTER HA, <none>, COMBINING MACRON, COMBINING CEDILLA
+1b              OEM_6       1           002B        002A        00B1        007E        2052        0303        -1          -1      // CYRILLIC SMALL LETTER HARD SIGN, CYRILLIC CAPITAL LETTER HARD SIGN, <none>, COMBINING INVERTED BREVE, COMBINING CYRILLIC PALATALIZATION
 
-02              1           0           1           0021        -1          00a1        00b9    // DIGIT ONE, EXCLAMATION MARK, <none>, INVERTED EXCLAMATION MARK, SUPERSCRIPT ONE
-03              2           0           2           0022        -1          2300        00b2    // DIGIT TWO, QUOTATION MARK, <none>, DIAMETER SIGN, SUPERSCRIPT TWO
-04              3           0           3           20bd        -1          00a7        00b3    // DIGIT THREE, RUBLE SIGN, <none>, SECTION SIGN, SUPERSCRIPT THREE
-05              4           0           4           20ac        -1          0024        00a3    // DIGIT FOUR, EURO SIGN, <none>, DOLLAR SIGN, POUND SIGN
-06              5           0           5           0025        -1          00a5        00a4    // DIGIT FIVE, PERCENT SIGN, <none>, YEN SIGN, CURRENCY SIGN
-07              6           0           6           0026        -1          007e        0303    // DIGIT SIX, AMPERSAND, <none>, TILDE, COMBINING TILDE
-08              7           0           7           003f        -1          0302        00bf    // DIGIT SEVEN, QUESTION MARK, <none>, CIRCUMFLEX ACCENT, INVERTED QUESTION MARK
-09              8           0           8           002a        -1          007b        221e    // DIGIT EIGHT, ASTERISK, <none>, LEFT CURLY BRACKET, INFINITY
-0a              9           0           9           0028        -1          005b        00f7    // DIGIT NINE, LEFT PARENTHESIS, <none>, LEFT SQUARE BRACKET, DIVISION SIGN
-0b              0           0           0           0029        -1          005d        002b    // DIGIT ZERO, RIGHT PARENTHESIS, <none>, RIGHT SQUARE BRACKET, PLUS SIGN
-0c              OEM_MINUS   0           2013        005f        -1          007d        00b1    // EN DASH, LOW LINE, <none>, RIGHT CURLY BRACKET, PLUS-MINUS SIGN
-0d              OEM_PLUS    0           002f        005c        -1          003d        2260    // SOLIDUS, REVERSE SOLIDUS, <none>, EQUALS SIGN, NOT EQUAL TO
-10              Q           5           046b        046a        -1          046d        046c    // CYRILLIC SMALL LETTER BIG YUS, CYRILLIC CAPITAL LETTER BIG YUS, <none>, CYRILLIC SMALL LETTER IOTIFIED BIG YUS, CYRILLIC CAPITAL LETTER IOTIFIED BIG YUS
-11              W           5           0446        0426        -1          0463        0462    // CYRILLIC SMALL LETTER TSE, CYRILLIC CAPITAL LETTER TSE, <none>, CYRILLIC SMALL LETTER YAT, CYRILLIC CAPITAL LETTER YAT
-12              E           5           0443        0423        -1          044e        042e    // CYRILLIC SMALL LETTER U, CYRILLIC CAPITAL LETTER U, <none>, CYRILLIC SMALL LETTER YU, CYRILLIC CAPITAL LETTER YU
-13              R           5           043a        041a        -1          0040        -1      // CYRILLIC SMALL LETTER KA, CYRILLIC CAPITAL LETTER KA, <none>, COMMERCIAL AT, <none>
-14              T           5           0435        0415        -1          0454        0404    // CYRILLIC SMALL LETTER IE, CYRILLIC CAPITAL LETTER IE, <none>, CYRILLIC SMALL LETTER UKRAINIAN IE, CYRILLIC CAPITAL LETTER UKRAINIAN IE
-15              Z           5           043d        041d        -1          045a        040a    // CYRILLIC SMALL LETTER EN, CYRILLIC CAPITAL LETTER EN, <none>, CYRILLIC SMALL LETTER NJE, CYRILLIC CAPITAL LETTER NJE
-16              U           5           0433        0413        -1          0491        0490    // CYRILLIC SMALL LETTER GHE, CYRILLIC CAPITAL LETTER GHE, <none>, CYRILLIC SMALL LETTER GHE WITH UPTURN, CYRILLIC CAPITAL LETTER GHE WITH UPTURN
-17              I           5           0448        0428        -1          0449        0429    // CYRILLIC SMALL LETTER SHA, CYRILLIC CAPITAL LETTER SHA, <none>, CYRILLIC SMALL LETTER SHCHA, CYRILLIC CAPITAL LETTER SHCHA
-18              O           5           0456        0406        -1          0458        0408    // CYRILLIC SMALL LETTER BYELORUSSIAN-UKRAINIAN I, CYRILLIC CAPITAL LETTER BYELORUSSIAN-UKRAINIAN I, <none>, CYRILLIC SMALL LETTER JE, CYRILLIC CAPITAL LETTER JE
-19              P           5           0437        0417        -1          046f        046e    // CYRILLIC SMALL LETTER ZE, CYRILLIC CAPITAL LETTER ZE, <none>, CYRILLIC SMALL LETTER KSI, CYRILLIC CAPITAL LETTER KSI
-1a              OEM_4       1           0445        0425        -1          0304        0327    // CYRILLIC SMALL LETTER HA, CYRILLIC CAPITAL LETTER HA, <none>, COMBINING MACRON, COMBINING CEDILLA
-1b              OEM_6       1           044a        042a        -1          0311        0484    // CYRILLIC SMALL LETTER HARD SIGN, CYRILLIC CAPITAL LETTER HARD SIGN, <none>, COMBINING INVERTED BREVE, COMBINING CYRILLIC PALATALIZATION
-1e              A           5           0444        0424        -1          0473        0472    // CYRILLIC SMALL LETTER EF, CYRILLIC CAPITAL LETTER EF, <none>, CYRILLIC SMALL LETTER FITA, CYRILLIC CAPITAL LETTER FITA
-1f              S           5           044b        042b        -1          a651        a650    // CYRILLIC SMALL LETTER YERU, CYRILLIC CAPITAL LETTER YERU, <none>, CYRILLIC SMALL LETTER YERU WITH BACK YER, CYRILLIC CAPITAL LETTER YERU WITH BACK YER
-20              D           5           0432        0412        -1          0475        0474    // CYRILLIC SMALL LETTER VE, CYRILLIC CAPITAL LETTER VE, <none>, CYRILLIC SMALL LETTER IZHITSA, CYRILLIC CAPITAL LETTER IZHITSA
-21              F           5           0430        0410        -1          a657        a656    // CYRILLIC SMALL LETTER A, CYRILLIC CAPITAL LETTER A, <none>, CYRILLIC SMALL LETTER IOTIFIED A, CYRILLIC CAPITAL LETTER IOTIFIED A
-22              G           5           043f        041f        -1          0471        0470    // CYRILLIC SMALL LETTER PE, CYRILLIC CAPITAL LETTER PE, <none>, CYRILLIC SMALL LETTER PSI, CYRILLIC CAPITAL LETTER PSI
-23              H           5           0440        0420        -1          0461        0460    // CYRILLIC SMALL LETTER ER, CYRILLIC CAPITAL LETTER ER, <none>, CYRILLIC SMALL LETTER OMEGA, CYRILLIC CAPITAL LETTER OMEGA
-24              J           5           043e        041e        -1          047b        047a    // CYRILLIC SMALL LETTER O, CYRILLIC CAPITAL LETTER O, <none>, CYRILLIC SMALL LETTER ROUND OMEGA, CYRILLIC CAPITAL LETTER ROUND OMEGA
-25              K           5           043b        041b        -1          0459        0409    // CYRILLIC SMALL LETTER EL, CYRILLIC CAPITAL LETTER EL, <none>, CYRILLIC SMALL LETTER LJE, CYRILLIC CAPITAL LETTER LJE
-26              L           5           0434        0414        -1          0452        0402    // CYRILLIC SMALL LETTER DE, CYRILLIC CAPITAL LETTER DE, <none>, CYRILLIC SMALL LETTER DJE, CYRILLIC CAPITAL LETTER DJE
-27              OEM_1       5           0436        0416        -1          045f        040f    // CYRILLIC SMALL LETTER ZHE, CYRILLIC CAPITAL LETTER ZHE, <none>, CYRILLIC SMALL LETTER DZHE, CYRILLIC CAPITAL LETTER DZHE
-28              OEM_7       5           044d        042d        -1          044f        042f    // CYRILLIC SMALL LETTER E, CYRILLIC CAPITAL LETTER E, <none>, CYRILLIC SMALL LETTER YA, CYRILLIC CAPITAL LETTER YA
-29              OEM_3       0           0308        0483        -1          0482        030a    // COMBINING DIAERESIS, COMBINING CYRILLIC TITLO, <none>, CYRILLIC THOUSANDS SIGN, COMBINING RING ABOVE
-2b              OEM_5       0           0023        0027        -1          0301        0300    // NUMBER SIGN, APOSTROPHE, <none>, COMBINING ACUTE ACCENT, COMBINING GRAVE ACCENT
-2c              Y           5           0467        0466        -1          0469        0468    // CYRILLIC SMALL LETTER LITTLE YUS, CYRILLIC CAPITAL LETTER LITTLE YUS, <none>, CYRILLIC SMALL LETTER IOTIFIED LITTLE YUS, CYRILLIC CAPITAL LETTER IOTIFIED LITTLE YUS
-2d              X           5           0447        0427        -1          045b        040b    // CYRILLIC SMALL LETTER CHE, CYRILLIC CAPITAL LETTER CHE, <none>, CYRILLIC SMALL LETTER TSHE, CYRILLIC CAPITAL LETTER TSHE
-2e              C           5           0441        0421        -1          0455        0405    // CYRILLIC SMALL LETTER ES, CYRILLIC CAPITAL LETTER ES, <none>, CYRILLIC SMALL LETTER DZE, CYRILLIC CAPITAL LETTER DZE
-2f              V           5           043c        041c        -1          0465        0464    // CYRILLIC SMALL LETTER EM, CYRILLIC CAPITAL LETTER EM, <none>, CYRILLIC SMALL LETTER IOTIFIED E, CYRILLIC CAPITAL LETTER IOTIFIED E
-30              B           5           0438        0418        -1          0439        0419    // CYRILLIC SMALL LETTER I, CYRILLIC CAPITAL LETTER I, <none>, CYRILLIC SMALL LETTER SHORT I, CYRILLIC CAPITAL LETTER SHORT I
-31              N           5           0442        0422        -1          047f        047e    // CYRILLIC SMALL LETTER TE, CYRILLIC CAPITAL LETTER TE, <none>, CYRILLIC SMALL LETTER OT, CYRILLIC CAPITAL LETTER OT
-32              M           1           044c        042c        -1          0306        0487    // CYRILLIC SMALL LETTER SOFT SIGN, CYRILLIC CAPITAL LETTER SOFT SIGN, <none>, COMBINING BREVE, COMBINING CYRILLIC POKRYTIE
-33              OEM_COMMA   1           0431        0411        -1          0486        0485    // CYRILLIC SMALL LETTER BE, CYRILLIC CAPITAL LETTER BE, <none>, COMBINING CYRILLIC PSILI PNEUMATA, COMBINING CYRILLIC DASIA PNEUMATA
-34              OEM_PERIOD  0           002c        003b        -1          00ab        2026    // COMMA, SEMICOLON, <none>, LEFT-POINTING DOUBLE ANGLE QUOTATION MARK, HORIZONTAL ELLIPSIS
-35              OEM_2       0           002e        003a        -1          00bb        0307    // FULL STOP, COLON, <none>, RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK, COMBINING DOT ABOVE
-39              SPACE       0           0020        0020        -1          -1          -1      // SPACE, SPACE, <none>, <none>, <none>
-56              OEM_102     0           003c        003e        -1          007c        00a6    // LESS-THAN SIGN, GREATER-THAN SIGN, <none>, VERTICAL LINE, BROKEN BAR
-53              DECIMAL     0           002c        -1          -1          002e        -1      // COMMA, , , FULL STOP,
+1e              A           5           0444        0424        -1          0473        -1          0472        -1          -1      // CYRILLIC SMALL LETTER EF, CYRILLIC CAPITAL LETTER EF, <none>, CYRILLIC SMALL LETTER FITA, CYRILLIC CAPITAL LETTER FITA
+1f              S           5           044b        042b        -1          A651        -1          A650        -1          -1      // CYRILLIC SMALL LETTER YERU, CYRILLIC CAPITAL LETTER YERU, <none>, CYRILLIC SMALL LETTER YERU WITH BACK YER, CYRILLIC CAPITAL LETTER YERU WITH BACK YER
+20              D           5           0432        0412        -1          0475        -1          0474        -1          -1      // CYRILLIC SMALL LETTER VE, CYRILLIC CAPITAL LETTER VE, <none>, CYRILLIC SMALL LETTER IZHITSA, CYRILLIC CAPITAL LETTER IZHITSA
+21              F           5           0430        0410        0463        044F        0462        042F        A657        A656    // CYRILLIC SMALL LETTER A, CYRILLIC CAPITAL LETTER A, <none>, CYRILLIC SMALL LETTER IOTIFIED A, CYRILLIC CAPITAL LETTER IOTIFIED A
+22              G           5           043f        041f        02BF        0486        261B        0485        02BE        261A    // CYRILLIC SMALL LETTER PE, CYRILLIC CAPITAL LETTER PE, <none>, CYRILLIC SMALL LETTER PSI, CYRILLIC CAPITAL LETTER PSI
+23              H           5           0440        0420        2122        0306        00AE        0487        -1          -1      // CYRILLIC SMALL LETTER ER, CYRILLIC CAPITAL LETTER ER, <none>, CYRILLIC SMALL LETTER OMEGA, CYRILLIC CAPITAL LETTER OMEGA
+24              J           5           043e        041e        047B        0461        047A        0460        047D        047C    // CYRILLIC SMALL LETTER O, CYRILLIC CAPITAL LETTER O, <none>, CYRILLIC SMALL LETTER ROUND OMEGA, CYRILLIC CAPITAL LETTER ROUND OMEGA
+25              K           5           043b        041b        -1          0459        -1          0409        -1          -1      // CYRILLIC SMALL LETTER EL, CYRILLIC CAPITAL LETTER EL, <none>, CYRILLIC SMALL LETTER LJE, CYRILLIC CAPITAL LETTER LJE
+26              L           5           0434        0414        -1          0452        -1          0402        -1          -1      // CYRILLIC SMALL LETTER DE, CYRILLIC CAPITAL LETTER DE, <none>, CYRILLIC SMALL LETTER DJE, CYRILLIC CAPITAL LETTER DJE
+27              OEM_1       5           0436        0416        -1          045F        -1          040F        -1          -1      // CYRILLIC SMALL LETTER ZHE, CYRILLIC CAPITAL LETTER ZHE, <none>, CYRILLIC SMALL LETTER DZHE, CYRILLIC CAPITAL LETTER DZHE
+28              OEM_7       5           044A        042A        -1          044C        -1          042C        -1          -1      // CYRILLIC SMALL LETTER E, CYRILLIC CAPITAL LETTER E, <none>, CYRILLIC SMALL LETTER YA, CYRILLIC CAPITAL LETTER YA
+29              OEM_3       0           0308        0483        -1          -1          -1          -1          0482        030a    // COMBINING DIAERESIS, COMBINING CYRILLIC TITLO, <none>, CYRILLIC THOUSANDS SIGN, COMBINING RING ABOVE
+2b              OEM_5       0           0023        0027        2020        2212        2021        -1          -1          -1      // NUMBER SIGN, APOSTROPHE, <none>, COMBINING ACUTE ACCENT, COMBINING GRAVE ACCENT
 
+2c              Y           5           0467        0466        -1                                              0469        0468    // CYRILLIC SMALL LETTER LITTLE YUS, CYRILLIC CAPITAL LETTER LITTLE YUS, <none>, CYRILLIC SMALL LETTER IOTIFIED LITTLE YUS, CYRILLIC CAPITAL LETTER IOTIFIED LITTLE YUS
+2d              X           5           0447        0427        -1                                              045b        040b    // CYRILLIC SMALL LETTER CHE, CYRILLIC CAPITAL LETTER CHE, <none>, CYRILLIC SMALL LETTER TSHE, CYRILLIC CAPITAL LETTER TSHE
+2e              C           5           0441        0421        -1                                              0455        0405    // CYRILLIC SMALL LETTER ES, CYRILLIC CAPITAL LETTER ES, <none>, CYRILLIC SMALL LETTER DZE, CYRILLIC CAPITAL LETTER DZE
+2f              V           5           043c        041c        -1                                              0465        0464    // CYRILLIC SMALL LETTER EM, CYRILLIC CAPITAL LETTER EM, <none>, CYRILLIC SMALL LETTER IOTIFIED E, CYRILLIC CAPITAL LETTER IOTIFIED E
+30              B           5           0438        0418        -1                                              0439        0419    // CYRILLIC SMALL LETTER I, CYRILLIC CAPITAL LETTER I, <none>, CYRILLIC SMALL LETTER SHORT I, CYRILLIC CAPITAL LETTER SHORT I
+31              N           5           0442        0422        -1                                              047f        047e    // CYRILLIC SMALL LETTER TE, CYRILLIC CAPITAL LETTER TE, <none>, CYRILLIC SMALL LETTER OT, CYRILLIC CAPITAL LETTER OT
+32              M           1           044c        042c        -1                                              0306        0487    // CYRILLIC SMALL LETTER SOFT SIGN, CYRILLIC CAPITAL LETTER SOFT SIGN, <none>, COMBINING BREVE, COMBINING CYRILLIC POKRYTIE
+33              OEM_COMMA   1           0431        0411        -1                                              0486        0485    // CYRILLIC SMALL LETTER BE, CYRILLIC CAPITAL LETTER BE, <none>, COMBINING CYRILLIC PSILI PNEUMATA, COMBINING CYRILLIC DASIA PNEUMATA
+34              OEM_PERIOD  0           002c        003b        -1                                              00ab        2026    // COMMA, SEMICOLON, <none>, LEFT-POINTING DOUBLE ANGLE QUOTATION MARK, HORIZONTAL ELLIPSIS
+35              OEM_2       0           002e        003a        -1                                              00bb        0307    // FULL STOP, COLON, <none>, RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK, COMBINING DOT ABOVE
+39              SPACE       0           0020        0020        -1                                              -1          -1      // SPACE, SPACE, <none>, <none>, <none>
+56              OEM_102     0           003c        003e        -1                                              007c        00a6    // LESS-THAN SIGN, GREATER-THAN SIGN, <none>, VERTICAL LINE, BROKEN BAR
+53              DECIMAL     0           002c        -1          -1                                              002e        -1      // COMMA, , , FULL STOP,
 
 KEYNAME
-
 01  Esc
 0e  Backspace
 0f  Tab
@@ -129,7 +126,6 @@ KEYNAME
 87  F24
 
 KEYNAME_EXT
-
 1c  "Num Enter"
 1d  "Right Ctrl"
 35  "Num /"
@@ -154,11 +150,9 @@ KEYNAME_EXT
 5d  Application
 
 DESCRIPTIONS
-
 0409    Слъавьанскъі        // USAGE: layout-name
 
 LANGUAGENAMES
-
 0409    Slavonic (Slavic)   // USAGE: unknown
 
 ENDKBD
