@@ -72,6 +72,34 @@ LAYOUT                                                      ;an extra '@' at the
 56              OEM_102     0           003c        003e        -1                                              007c        007c    // LESS-THAN SIGN, GREATER-THAN SIGN, <none>, VERTICAL LINE, BROKEN BAR, QWERTY Iso: <, >, |, |
 53              DECIMAL     0           002c        -1          -1                                              002e        -1      // COMMA, , , FULL STOP,
 
+DEADKEY 005E
+0061	00e2
+0041	00c2
+0065	00ea
+0045	00ca
+0069	00ee
+0049	00ce
+006f	00f4
+004f	00d4
+0075	00fb
+0055	00db
+0020	005E
+
+DEADKEY 0445
+0020	0445
+
+DEADKEY 002B
+0020	002B
+
+DEADKEY 0431
+0020	0431
+
+KEYNAME_DEAD
+005E	"CIRCUMFLEX ACCENT"
+0445	"CYRILLIC SMALL LETTER HA"
+002B	"PLUS SIGN"
+0431	"CYRILLIC SMALL LETTER BE"
+
 KEYNAME
 01  Esc
 0e  Backspace
