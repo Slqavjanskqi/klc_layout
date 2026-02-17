@@ -6,14 +6,14 @@ LOCALEID        "00001000"
 VERSION         3.7.8                                       // USAGE: unknown
 
 SHIFTSTATE
-0                                                           // Level 1 : Base
-1                                                           // Level 2 : Base + Shft
-2                                                           // Level 5 : Base + Ctrl
-3                                                           // Level 3 : Base + Alt
-4                                                           // Level 6 : Base + Ctrl + Shift
-5                                                           // Level 4 : Base + Alt + Shift
-6                                                           // Level 7 : Base + Ctrl + Alt
-7                                                           // Level 8 : Base + Ctrl + Alt + Shft
+00                                                          // Level 1 : Base
+01                                                          // Level 2 : Base + Shft
+02                                                          // Level 5 : Base + Ctrl
+03                                                          // Level 3 : Base + Alt
+04                                                          // Level 6 : Base + Ctrl + Shift
+05                                                          // Level 4 : Base + Alt + Shift
+06                                                          // Level 7 : Base + Ctrl + Alt
+07                                                          // Level 8 : Base + Ctrl + Alt + Shft
 
 LAYOUT                                                      ;an extra '@' at the end is a dead key
 //ScanCodeHex   VirtKeyHex  DeadCap(0/1)0(1)        1(2)        2(5)        3(3)        4(6)        5(4)        6(7)        7(8)
