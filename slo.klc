@@ -17,7 +17,7 @@ SHIFTSTATE
 
 LAYOUT                                                      ;an extra '@' at the end is a dead key
 //ScanCodeHex   VirtKeyHex  DeadCap(0/1)0(1)        1(2)        2(5)        3(3)        4(6)        5(4)        6(7)        7(8)
-01              ^           1           005E@       00B0        0308        00D7        -1          0302        0482        0483    
+01              ESCAPE      1           005E@       00B0        0308        00D7        -1          0302        0482        0483    
 02              1           0           1           0021        00BC        2019        25CA        -1          0488        -1      // DIGIT ONE, EXCLAMATION MARK, <none>, INVERTED EXCLAMATION MARK, SUPERSCRIPT ONE, QWERTY 1: 1, !, ’, ’
 03              2           0           2           0022        00BD        00B2        00A6        -1          0489        A670    // DIGIT TWO, QUOTATION MARK, <none>, DIAMETER SIGN, SUPERSCRIPT TWO, QWERTY 2: 2, ", ², ²
 04              3           0           3           00A7        00BE        00B3        00B6        -1          A671        A672    // DIGIT THREE, RUBLE SIGN, <none>, SECTION SIGN, SUPERSCRIPT THREE, QWERTY 3: 3, §, ³, ³
@@ -28,8 +28,8 @@ LAYOUT                                                      ;an extra '@' at the
 09              8           0           8           0028        27E8        005B        27EA        221E        -1          -1      // DIGIT EIGHT, ASTERISK, <none>, LEFT CURLY BRACKET, INFINITY, QWERTY 8: 8, (, [, ∞
 0a              9           0           9           0029        27E9        005D        27EB        -1          -1          -1      // DIGIT NINE, LEFT PARENTHESIS, <none>, LEFT SQUARE BRACKET, DIVISION SIGN, QWERTY 9: 9, ), ], ]
 0b              0           0           0           003D        00F7        007D        2205        2260        -1          -1      // DIGIT ZERO, RIGHT PARENTHESIS, <none>, RIGHT SQUARE BRACKET, PLUS SIGN, QWERTY 0: 0, =, }, ≠
-0c              -1          0           -1          003F        -1          005C        -1          -1          -1          -1      // EN DASH, LOW LINE, <none>, RIGHT CURLY BRACKET, PLUS-MINUS SIGN, QWERTY -: Extend, ?, \, \
-0d              0301        0           0301        0300        00A3        0307        035C        0327        030B        030F    // SOLIDUS, REVERSE SOLIDUS, <none>, EQUALS SIGN, NOT EQUAL TO, QWERTY +: ́, ̀, ̇, ̧
+0c              OEM_MINUS   0           -1          003F        -1          005C        -1          -1          -1          -1      // EN DASH, LOW LINE, <none>, RIGHT CURLY BRACKET, PLUS-MINUS SIGN, QWERTY -: Extend, ?, \, \
+0d              OEM_PLUS    0           0301        0300        00A3        0307        035C        0327        030B        030F    // SOLIDUS, REVERSE SOLIDUS, <none>, EQUALS SIGN, NOT EQUAL TO, QWERTY +: ́, ̀, ̇, ̧
 
 10              Q           5           046B        046A        0040        046D        -1          046C        051B        051A    // CYRILLIC SMALL LETTER BIG YUS, CYRILLIC CAPITAL LETTER BIG YUS, <none>, CYRILLIC SMALL LETTER IOTIFIED BIG YUS, CYRILLIC CAPITAL LETTER IOTIFIED BIG YUS
 11              W           5           0446        0426        00A2        -1          00A9        -1          -1          -1      // CYRILLIC SMALL LETTER TSE, CYRILLIC CAPITAL LETTER TSE, <none>, CYRILLIC SMALL LETTER YAT, CYRILLIC CAPITAL LETTER YAT
